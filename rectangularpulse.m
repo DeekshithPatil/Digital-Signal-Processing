@@ -1,0 +1,12 @@
+n=-10:11;
+un1=n>=-10;
+un2=n>=11;
+un=un1-un2;
+un
+figure(1);
+stem(n,un);
+x=fft(un,512);
+x1=fftshift(x);
+n1=-256:255;
+figure(2);
+plot(n1,x1);
